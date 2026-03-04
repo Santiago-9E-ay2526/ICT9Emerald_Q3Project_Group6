@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 ICT Project-Fare Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+
+ <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+    
+    <!--START OF HEADER -->
+    <header class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)">MRT-3 Fare Matrix</a>
+    <form class="d-flex">
+        
+        <button class="btn btn-primary" type="button">Create Account</button>
+        </form>
+        </div>
+     </nav>
+     </div>
+    </header>
+     <!--END OF HEADER -->
+
+    <!--START OF MAIN -->
+        <main class-="container-fluid">
+        <div class="container bg-info rounded mt-5 p-3">
+            <h1>MRT-3 Fare Matrix</h1>
+            <p class="text-muted">PICK-UP LOCATION:</p>
+            <input type="text" id="PICKUP" class="form-control mx-auto" placeholder="North Ave..."> 
+            
+            <p class="text-muted">DROP-OFF LOCATION</p>
+            <input type="text" id="DROPOFF" class="form-control mx-auto" placeholder="Taft..."> 
+            
+            <div class="container">
+            <button class="btn btn-primary" onclick="buttonFare()">Regular Fare</button>
+            <div id="RegularFare"></div>
+
+            <button class="btn btn-primary" onclick="buttonDiscount()">Discounted Fare</button> 
+            <div id="DiscountFare"></div>
+        
+        <button class="btn btn-primary" onclick="window.location.reload()">Refresh</button>
+      </div>
+    </main>
+
+        <!--Start of Footer-->
+    <footer class="bg-dark text-white py-3 fixed-bottom text-center">
+        <small>&copy;Hans Baquiran | 9-Emerald @2026</small>
+    </footer>
+    
+    <script src="main.js">
+    </script>
+</body>
+</html>
