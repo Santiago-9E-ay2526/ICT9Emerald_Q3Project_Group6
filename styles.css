@@ -18,8 +18,10 @@ body {
 }
 
 #createAccountBtn {
+  display: flex;
   justify-content: right;
 }
+
 
 
 
