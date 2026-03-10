@@ -17,6 +17,9 @@ body {
   width: 100%;
 }
 
-
+#createAccountBtn {
+  display: flex;
+  justify-content: flex-end;
+}
 
 
