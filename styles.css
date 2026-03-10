@@ -18,9 +18,9 @@ body {
 }
 
 #createAccountBtn {
-  display: flex;
-  justify-content: right;
+  margin: 100px;
 }
+
 
 
 
