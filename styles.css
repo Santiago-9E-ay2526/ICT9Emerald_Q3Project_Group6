@@ -18,8 +18,9 @@ body {
 }
 
 #createAccountBtn {
-  margin-left: 10px;
+  justify-content: right;
 }
+
 
 
 
