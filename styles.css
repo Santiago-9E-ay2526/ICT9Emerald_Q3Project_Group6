@@ -23,10 +23,61 @@ body {
   justify-content: flex-end;
 }
 
+.navbar-nav .nav-link {
+    font-size: small;
+}
+
 .footer {
     background-color: rgba(0,0,0,0.6);
 }
 
-.navbar-nav .nav-link {
-    font-size: 15px;
+body {
+    margin: 15px;
+    padding: 20px;
+    height: 100vh;
+    background: url("#") no-repeat center center-fixed;
+    background-size: cover;
+    font-family: Gill Sans, sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    background: rgb(173, 209, 219);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3)
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.ProfileImg {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.ChoosingProfile {
+    text-align: center;
+}
+
+h2 {
+    font-family: Impact, sans-serif;
+    text-align: center;
 }
