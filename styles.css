@@ -72,7 +72,6 @@ main {
 }
 
 .ProfileImg {
-    border-radius: 50%;
     object-fit: cover;
     width: 150px;
     height: 150px;
@@ -92,3 +91,4 @@ h2 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
