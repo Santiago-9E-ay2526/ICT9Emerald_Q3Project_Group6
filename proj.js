@@ -10,12 +10,9 @@ function buttonFare() {
         </div>`;
 }
 
-
 function buttonDiscount() {
-
     let pickup = document.getElementById("PICKUP").value;
     let dropoff = document.getElementById("DROPOFF").value;
-
 
     let regularFare = 50.30;
     let discountedFare = regularFare * 0.75;
@@ -26,32 +23,32 @@ function buttonDiscount() {
         </div>`;
 }
 
-// Password confirmation
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
-  const password = document.getElementById("inputPassword");
-  const confirmPassword = document.getElementById("confirmPassword");
+    // Password confirmation
+    const form = document.querySelector("form");
+    const password = document.getElementById("inputPassword");
+    const confirmPassword = document.getElementById("confirmPassword");
 
-  form.addEventListener("submit", function (event) {
-    if (password.value !== confirmPassword.value) {
-      event.preventDefault(); // stop form submission
-      alert("Passwords do not match!");
-    }
-  });
+    form.addEventListener("submit", function (event) {
+        if (password.value !== confirmPassword.value) {
+            event.preventDefault();
+            alert("Passwords do not match!");
+        }
+    });
 
-// Image preview & filename display
-const fileInput = document.getElementById("ChooseFile");
-const profileImg = document.getElementById("ProfileImg");
-const fileNameDisplay = document.getElementById("NoFileBtn");
+    // File input & profile preview
+    const fileInput = document.getElementById("ChooseFile");
+    const profileImg = document.getElementById("ProfileImg");
+    const fileNameDisplay = document.getElementById("NoFileBtn");
 
-fileInput.addEventListener("change", function () {
-    const file = this.files[0];
-    if (file) {
-        profileImg.src = URL.createObjectURL(file); // preview
-        fileNameDisplay.textContent = file.name;   // show filename
-    } else {
-        profileImg.src = "";
-        fileNameDisplay.textContent = "No File Chosen";
-    }
+    fileInput.addEventListener("change", function () {
+        const file = this.files[0];
+        if (file) {
+            profileImg.src = URL.createObjectURL(file);
+            fileNameDisplay.textContent = file.name;
+        } else {
+            profileImg.src = "";
+            fileNameDisplay.textContent = "No File Chosen";
+        }
+    });
 });
-
