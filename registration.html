@@ -14,7 +14,63 @@
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+  <style>
+    
+    #registrationContainer {
+      background-color: rgba(0,0,0,0.65);
+      padding: 60px;
+      border-radius: 15px;
+      width: 85%;
+      margin: 50px auto; 
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Gill Sans', sans-serif;
+    }
 
+    
+    #registrationContainer h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    
+    #registrationContainer input.form-control {
+      max-width: 300px;
+      margin-bottom: 15px;
+      background-color: rgba(255,255,255,0.1);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    #registrationContainer input.form-control::placeholder {
+      color: rgba(255,255,255,0.7);
+    }
+
+
+    #registrationContainer button.btn {
+      width: 100%;
+      max-width: 200px;
+      margin: 5px 0;
+    }
+
+
+    #registrationContainer label {
+      color: white;
+    }
+        
+    #registrationContainer #ProfileImg {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+        
+    </style>
+    
 </head>
 <body>
 
@@ -51,83 +107,55 @@
     </div> 
 </nav>
     <!-- END OF NAV -->
-    
-    <div class="container">
+
+<div id="registrationContainer">
+    <img src="" id="ProfileImg" alt="Profile Image">
+    <h2>Registration</h2>
+    <form>
         <div class="row">
-            <div class="col-sm-6">
-                <img src="" height="80" id="ProfileImg">
-                <br>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-secondary">
-                        <input type="file" name="options" id="ChooseFile" autocomplete="off"> 
-                    </label>
-                    <label class="btn btn-secondary">
-                        <input class="btn btn-secondary" id="NoFileBtn" autocomplete="off"> No File Chosen
-                    </label>
-                </div>
+            <div class="col">
+                <label>First Name</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="Enter">
             </div>
-            <div class="col-sm-6">
-                <form>
-                    <h2>Registration</h2>
-                    <br>
-                    <br>
-                    <div class="row">
-                        <!--NAME-->
-                        <div class="col">
-                            <label class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="inputFirstName" placeholder="Enter">
-                            <br>
-                        </div>
-                        <div class="col">
-                            <label class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="inputLastName" placeholder="Enter">
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">       
-                        <!--AGE-->
-                        <div class="col">
-                            <label class="form-label">Age</label>
-                            <input type="number" class="form-control" id="inputAge" placeholder="0">
-                        </div>
-                        <!--CONTACT-->
-                        <div class="col">
-                            <label class="form-label">Contact Number</label>
-                            <input type="number" class="form-control" id="inputContact" placeholder="000-000-0000">
-                            <br>
-                        </div>
-                    </div>
-
-                    <!--EMAIL-->
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="enter@email.com">
-                        <br>
-
-                    <!--USERNAME-->
-                        <label class="form-label">Enter a Username</label>
-                        <input type="text" class="form-control" id="inputUsername" placeholder="Enter">
-                        <br>
-
-                    <!--PASSWORD-->
-                        <label class="form-label">Enter a Password</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter">
-                        <br>
-                        <label class="form-label">Confrim Password</label>
-                        <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter">
-                        <br>
-
-                    <!--TERMS&CONDITIONS-->
-                        <input type="checkbox" id="acceptTerms&Conditions">
-                        <label>I accept the <span style="color:blue;">Terms and Conditions</span></label>
-                        <br>
-                        <br>
-
-                    <!--SIGN-UP-->
-                        <button type="submit" class="btn btn-primary">Sign-Up</button>
-                </form>
+            <div class="col">
+                <label>Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Enter">
             </div>
         </div>
-    </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Age</label>
+                <input type="number" class="form-control" id="inputAge" placeholder="0">
+            </div>
+            <div class="col">
+                <label>Contact Number</label>
+                <input type="number" class="form-control" id="inputContact" placeholder="000-000-0000">
+            </div>
+        </div>
+
+        <label>Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="enter@email.com">
+
+        <label>Username</label>
+        <input type="text" class="form-control" id="inputUsername" placeholder="Enter">
+
+        <label>Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Enter">
+
+        <label>Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter">
+
+        <div class="form-check my-3">
+            <input type="checkbox" class="form-check-input" id="acceptTerms">
+            <label class="form-check-label" for="acceptTerms">
+                I accept the <span style="color:blue;">Terms and Conditions</span>
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign-Up</button>
+    </form>
+</div>
 
     <!-- FOOTER -->
     <footer class="bg-dark text-light mt-5" id="footer">
@@ -142,6 +170,7 @@
 </body>
 
 </html>
+
 
 
 
