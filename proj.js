@@ -47,14 +47,10 @@ const fileNameDisplay = document.getElementById("NoFileBtn");
 fileInput.addEventListener("change", function () {
     const file = this.files[0];
     if (file) {
-        profileImg.src = URL.createObjectURL(file);
-        fileNameDisplay.textContent = file.name;
+        profileImg.src = URL.createObjectURL(file); // preview
+        fileNameDisplay.textContent = file.name;   // show filename
     } else {
         profileImg.src = "";
         fileNameDisplay.textContent = "No File Chosen";
     }
 });
-
-
-
-
