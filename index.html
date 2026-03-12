@@ -65,22 +65,23 @@
 
     <!--START OF FARE MATRIX -->
 <main class="container-fluid" id="fareMatrix">
-    <div style="background-color:rgba(0,0,0,0.65); padding:60px; border-radius:15px; width:85%; margin:auto; color:white;">
+    <div style="background-color:rgba(0,0,0,0.65); padding:60px; border-radius:15px; width:85%; margin:auto; color:white; display:flex; flex-direction:column; align-items:center;">
         <h1>MRT-3 Fare Matrix</h1>
+
         <p>PICK-UP LOCATION</p>
-        <input type="text" id="PICKUP" class="form-control mx-auto" placeholder="North Ave..."> <br>
+        <input type="text" id="PICKUP" class="form-control mx-auto" placeholder="North Ave..." style="max-width:300px; margin-bottom:15px;">
 
         <p>DROP-OFF LOCATION</p>
-        <input type="text" id="DROPOFF" class="form-control mx-auto" placeholder="Taft..."> <br>
+        <input type="text" id="DROPOFF" class="form-control mx-auto" placeholder="Taft..." style="max-width:300px; margin-bottom:20px;">
 
-        <div>
-            <button class="btn btn-primary" onclick="buttonFare()">Regular Fare</button>
-            <div id="RegularFare"></div> <br>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:10px; width:100%; max-width:200px;">
+            <button class="btn btn-primary w-100" onclick="buttonFare()">Regular Fare</button>
+            <div id="RegularFare"></div>
 
-            <button class="btn btn-primary" onclick="buttonDiscount()">Discounted Fare</button> 
-            <div id="DiscountFare"></div> <br>
+            <button class="btn btn-primary w-100" onclick="buttonDiscount()">Discounted Fare</button> 
+            <div id="DiscountFare"></div>
 
-            <button class="btn btn-primary" onclick="window.location.reload()">Refresh</button> <br>
+            <button class="btn btn-primary w-100" onclick="window.location.reload()">Refresh</button>
         </div>
     </div>
 </main>
@@ -98,6 +99,7 @@
     </script>
 </body>
 </html>
+
 
 
 
