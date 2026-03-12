@@ -64,26 +64,27 @@
     <!-- END HOME PAGE -->
 
     <!--START OF FARE MATRIX -->
-        <main class="container-fluid" id="fareMatrix">
-        <div class="container bg-info rounded mt-5 p-3">
-            <h1>MRT-3 Fare Matrix</h1>
-            <p class="text-muted">PICK-UP LOCATION</p>
-            <input type="text" id="PICKUP" class="form-control mx-auto" placeholder="North Ave..."> <br>
-            
-            <p class="text-muted">DROP-OFF LOCATION</p>
-            <input type="text" id="DROPOFF" class="form-control mx-auto" placeholder="Taft..."> <br>
-            
-            <div class="container">
+<main class="container-fluid" id="fareMatrix">
+    <div style="background-color:rgba(0,0,0,0.65); padding:60px; border-radius:15px; width:85%; margin:auto; color:white;">
+        <h1>MRT-3 Fare Matrix</h1>
+        <p>PICK-UP LOCATION</p>
+        <input type="text" id="PICKUP" class="form-control mx-auto" placeholder="North Ave..."> <br>
+
+        <p>DROP-OFF LOCATION</p>
+        <input type="text" id="DROPOFF" class="form-control mx-auto" placeholder="Taft..."> <br>
+
+        <div>
             <button class="btn btn-primary" onclick="buttonFare()">Regular Fare</button>
             <div id="RegularFare"></div> <br>
 
             <button class="btn btn-primary" onclick="buttonDiscount()">Discounted Fare</button> 
             <div id="DiscountFare"></div> <br>
-        
+
             <button class="btn btn-primary" onclick="window.location.reload()">Refresh</button> <br>
-          </div>
-        </main>
-    <!-- END OF FARE MATRIX -->
+        </div>
+    </div>
+</main>
+<!-- END OF FARE MATRIX -->
 
     <!-- FOOTER -->
     <footer class="bg-dark text-light mt-5" id="footer">
@@ -97,6 +98,7 @@
     </script>
 </body>
 </html>
+
 
 
 
