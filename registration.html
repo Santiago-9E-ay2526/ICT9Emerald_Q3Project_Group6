@@ -63,6 +63,22 @@
       object-fit: cover;
       margin-bottom: 20px;
     }
+
+    .pfp-upload {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    #NoFileBtn{
+        color: white;
+        font-size: 0.9rem;
+    }
+
+    .pfp-upload.btn {
+        min-width: 120px;
+    }
         
     </style>
     
@@ -108,12 +124,11 @@
     <!-- Profile Picture -->
     <img src="" id="ProfileImg" alt="Profile Image>
 
-    <div class="pfp-upload">
-        <label class="btn btn-secondary">
-            <input type="file" id="ChooseFile" autocomplete="off"> Choose File
-        </label>
-        <span id="NoFileBtn">No File Chosen</span>
-    </div>
+<div class="pfp-upload">
+    <label class="btn btn-secondary" for="ChooseFile">Choose File</label>
+        <input type="file" id="ChooseFile" style="display:none;">
+    <span id="NoFileBtn">No File Chosen</span>
+</div>
 
     <!-- Registration Form -->
     <form>
@@ -178,6 +193,7 @@
 </body>
 
 </html>
+
 
 
 
