@@ -13,7 +13,8 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding-top: 80px;
+  padding-top: 60px;
+  margin-bottom: 80px;
 }
 
 .container.bg-info {
@@ -25,7 +26,7 @@ body {
 #footer {
   background-color: rgba(0,0,0,0.6);
   width: 100%;
-  padding: 20px 0;
+  padding: 5px 0;
   text-align: center;
 }
 
@@ -79,7 +80,3 @@ h2 {
     font-family: Impact, sans-serif;
     text-align: center;
 }
-
-
-
-
