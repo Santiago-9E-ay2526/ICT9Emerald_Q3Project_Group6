@@ -33,7 +33,7 @@ main {
   width: 100%;
   padding: 10px 0;
   text-align: center;
-  margin-top: auto;
+  margin-top: 10px;
 }
 
 #createAccountBtn {
@@ -86,6 +86,7 @@ h2 {
     font-family: Impact, sans-serif;
     text-align: center;
 }
+
 
 
 
