@@ -39,19 +39,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-// Image preview
-  const fileInput = document.getElementById("ChooseFile");
-  const profileImg = document.getElementById("ProfileImg");
+// Image preview & filename display
+const fileInput = document.getElementById("ChooseFile");
+const profileImg = document.getElementById("ProfileImg");
+const fileNameDisplay = document.getElementById("NoFileBtn");
 
-  fileInput.addEventListener("change", function (event) {
+fileInput.addEventListener("change", function (event) {
     const file = event.target.files[0];
     if (file) {
-      const reader = new FileReader();
-      reader.onload = function (e) {
-        profileImg.src = e.target.result;
-      };
-      reader.readAsDataURL(file);
+        // Show preview
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            profileImg.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+
+        // Update file name
+        fileNameDisplay.textContent = file.name;
+    } else {
+        // If user cancels selection
+        fileNameDisplay.textContent = "No File Chosen";
+        profileImg.src = ""; // optional: reset image
     }
-  });
 });
+
 
