@@ -108,11 +108,23 @@
 </nav>
     <!-- END OF NAV -->
 
+<!-- REGISTRATION FORM-->
 <div id="registrationContainer">
+    <!-- Profile Picture -->
     <img src="" id="ProfileImg" alt="Profile Image">
-    <h2>Registration</h2>
+
+    <div class="pfp-upload">
+        <label class="btn btn-secondary">
+            <input type="file" id="ChooseFile" autocomplete="off"> Choose File
+        </label>
+        <span id="NoFileBtn">No File Chosen</span>
+    </div>
+
+    <!-- Registration Form -->
     <form>
-        <div class="row">
+        <h2>Registration</h2>
+
+        <div class="row mb-3">
             <div class="col">
                 <label>First Name</label>
                 <input type="text" class="form-control" id="inputFirstName" placeholder="Enter">
@@ -123,7 +135,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-3">
             <div class="col">
                 <label>Age</label>
                 <input type="number" class="form-control" id="inputAge" placeholder="0">
@@ -135,18 +147,18 @@
         </div>
 
         <label>Email</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="enter@email.com">
+        <input type="email" class="form-control mb-3" id="inputEmail" placeholder="enter@email.com">
 
         <label>Username</label>
-        <input type="text" class="form-control" id="inputUsername" placeholder="Enter">
+        <input type="text" class="form-control mb-3" id="inputUsername" placeholder="Enter">
 
         <label>Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Enter">
+        <input type="password" class="form-control mb-3" id="inputPassword" placeholder="Enter">
 
         <label>Confirm Password</label>
-        <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter">
+        <input type="password" class="form-control mb-3" id="confirmPassword" placeholder="Re-enter">
 
-        <div class="form-check my-3">
+        <div class="form-check mb-3">
             <input type="checkbox" class="form-check-input" id="acceptTerms">
             <label class="form-check-label" for="acceptTerms">
                 I accept the <span style="color:blue;">Terms and Conditions</span>
@@ -156,6 +168,7 @@
         <button type="submit" class="btn btn-primary">Sign-Up</button>
     </form>
 </div>
+<!--END OF REGISTRATION FORM-->
 
     <!-- FOOTER -->
     <footer class="bg-dark text-light mt-5" id="footer">
@@ -170,6 +183,7 @@
 </body>
 
 </html>
+
 
 
 
