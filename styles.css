@@ -4,6 +4,10 @@ html, body {
   font-family: Gill Sans, sans-serif;
 }
 
+#fareMatrixHeading {
+  text-align: center;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -91,6 +95,7 @@ h2 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 
 
 
