@@ -44,23 +44,16 @@ const fileInput = document.getElementById("ChooseFile");
 const profileImg = document.getElementById("ProfileImg");
 const fileNameDisplay = document.getElementById("NoFileBtn");
 
-fileInput.addEventListener("change", function (event) {
-    const file = event.target.files[0];
+fileInput.addEventListener("change", function () {
+    const file = this.files[0];
     if (file) {
-        // Show preview
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            profileImg.src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-
-        // Update file name
+        profileImg.src = URL.createObjectURL(file);
         fileNameDisplay.textContent = file.name;
     } else {
-        // If user cancels selection
+        profileImg.src = "";
         fileNameDisplay.textContent = "No File Chosen";
-        profileImg.src = ""; // optional: reset image
     }
 });
+
 
 
