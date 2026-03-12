@@ -102,20 +102,19 @@
 
 <!-- REGISTRATION FORM-->
 <main class="container text-light" id="registrationContainer">
-    
-    <!-- Profile Picture -->
-    <div class="text-center mb-4">
-        <div class="mb-2">
-            <span>Profile Image</span>
-        </div>
-        <img id="ProfileImg" src="" alt="Profile Image" class="rounded-circle mb-3" width="150" height="150">
-        
-        <div class="text-center">
-            <label for="ChooseFile" class="btn btn-secondary btn-sm mb-1">Choose File</label>
-            <input type="file" id="ChooseFile" style="display:none;">
-            <div id="NoFileBtn">No File Chosen</div>
-        </div>
-    </div>
+
+    <div class="col-sm-6">
+                <img src="" height="80" id="ProfileImg">
+                <br>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="file" name="options" id="ChooseFile" autocomplete="off"> 
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input class="btn btn-secondary" id="NoFileBtn" autocomplete="off"> No File Chosen
+                    </label>
+                </div>
+            </div>
 
     <!-- Registration Form -->
     <form class="mx-auto" style="max-width: 400px;">
@@ -179,6 +178,7 @@
 </body>
 
 </html>
+
 
 
 
