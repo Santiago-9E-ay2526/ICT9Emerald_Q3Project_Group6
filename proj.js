@@ -54,3 +54,4 @@ fileInput.addEventListener("change", function () {
         fileNameDisplay.textContent = "No File Chosen";
     }
 });
+
