@@ -1,14 +1,25 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Gill Sans, sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: Gill Sans, sans-serif;
   background-image: url("mrt.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding-top: 60px;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+  padding: 20px 0;
 }
 
 .container.bg-info {
@@ -20,8 +31,9 @@ body {
 #footer {
   background-color: rgba(0,0,0,0.6);
   width: 100%;
-  padding: 5px 0;
+  padding: 10px 0;
   text-align: center;
+  margin-top: auto;
 }
 
 #createAccountBtn {
@@ -30,7 +42,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    font-size: small;
+  font-size: small;
 }
 
 .overlay {
@@ -74,5 +86,6 @@ h2 {
     font-family: Impact, sans-serif;
     text-align: center;
 }
+
 
 
