@@ -1,7 +1,11 @@
 body {
   background-image: url("mrt.jpg");
   background-size: cover;
-  background-position: center; 
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Gill Sans, sans-serif;
+  margin: 0;
+  padding-top: 80px;
 }
 
 .container.bg-info {
@@ -28,15 +32,6 @@ body {
 
 .footer {
     background-color: rgba(0,0,0,0.6);
-}
-
-body {
-    margin: 15px;
-    padding: 20px;
-    height: 100vh;
-    background: url("#") no-repeat center center-fixed;
-    background-size: cover;
-    font-family: Gill Sans, sans-serif;
 }
 
 .overlay {
@@ -80,4 +75,5 @@ h2 {
     font-family: Impact, sans-serif;
     text-align: center;
 }
+
 
