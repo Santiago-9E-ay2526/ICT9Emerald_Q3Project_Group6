@@ -22,10 +22,7 @@ body {
   justify-content: flex-end;
 }
 
-.navbar-nav .nav-link {
-    font-size: x-small;
-}
-
 .footer {
     background-color: rgba(0,0,0,0.6);
 }
+
