@@ -104,5 +104,6 @@ h2 {
 #DISTANCE {
   max-width: 300px;
   margin: 0 auto 20px;
-  text-align: center;
+  text-align: left;
 }
+
