@@ -80,10 +80,13 @@
 	</p>
 		
         <p>PICK-UP LOCATION</p>
-        <input type="text" id="PICKUP" class="form-control mx-auto" placeholder="North Ave..." style="max-width: 300px; margin-bottom: 15px;">
+        <input type="text" id="PICKUP" class="form-control mx-auto" placeholder="North Ave..." style="max-width: 300px; margin-bottom: 20px;">
 
         <p>DROP-OFF LOCATION</p>
         <input type="text" id="DROPOFF" class="form-control mx-auto" placeholder="Taft..." style="max-width: 300px; margin-bottom: 20px;">
+
+		<p>DISTANCE (KM)</p>
+		<input type="number" id="DISTANCE" class="form-control mx-auto" placeholder="Enter distance..." step="0.1" style="max-width: 300px; margin-bottom: 20px;">
 
         <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 200px;">
             <button class="btn btn-primary w-100" onclick="buttonFare()">Regular Fare</button>
@@ -113,6 +116,7 @@
 	
 </body>
 </html>
+
 
 
 
