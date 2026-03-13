@@ -1,19 +1,20 @@
-const basefare = 50;
-const perKMrate = 15;
-const baseKM = 2;
+const basefare = 50; // minimum fare, includes first 2KM
+const perKMrate = 15; // cost per kilometer beyond 2KM
+const baseKM = 2; // distance included in base fare
 
 function buttonFare() {
     let pickup = document.getElementById("PICKUP").value;
     let dropoff = document.getElementById("DROPOFF").value;
-    let distance = parseFloat(document.getElementById("DISTANCE").value) || 0;
+    let distance = parseFloat(document.getElementById("DISTANCE").value);
 
-    let fare;
-
-    if (distance <= baseKM) {
-        fare = basefare;
-    } else {
-        fare = basefare + (distance - baseKM) * perKMrate;
+    if (!distance || distance <= 0) {
+        alert("Please enter a valid distance in KM!");
+        return;
     }
+
+    // Compute fare: base fare + extra distance cost
+    let extraKM = Math.max(0, distance - baseKM); // distance beyond 2KM
+    let fare = basefare + extraKM * perKMrate;
 
     document.getElementById("RegularFare").innerHTML = `
         <div class="alert alert-primary mt-2">
@@ -25,16 +26,18 @@ function buttonFare() {
 function buttonDiscount() {
     let pickup = document.getElementById("PICKUP").value;
     let dropoff = document.getElementById("DROPOFF").value;
-    let distance = parseFloat(document.getElementById("DISTANCE").value) || 0;
+    let distance = parseFloat(document.getElementById("DISTANCE").value);
 
-    let regularFare;
-
-    if (distance <= baseKM) {
-        regularFare = basefare;
-    } else {
-        regularFare = basefare + (distance - baseKM) * perKMrate;
+    if (!distance || distance <= 0) {
+        alert("Please enter a valid distance in KM!");
+        return;
     }
 
+    // Compute regular fare first
+    let extraKM = Math.max(0, distance - baseKM);
+    let regularFare = basefare + extraKM * perKMrate;
+
+    // Apply 25% discount
     let discountedFare = regularFare * 0.75;
 
     document.getElementById("DiscountFare").innerHTML = `
@@ -72,5 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
 
