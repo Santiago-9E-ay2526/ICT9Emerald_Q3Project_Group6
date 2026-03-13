@@ -74,7 +74,7 @@
     <div style="background-color: rgba(0,0,0,0.65); padding: 60px; border-radius: 15px; width: 85%; margin: auto; color: white; display: flex; flex-direction: column; align-items: center;">
     <img src="mrtmap.jpg" width="200" style="border-radius: 10px; margin-bottom: 20px;">
 	<h1>MRT-3 Fare Matrix</h1>
-	<p style="max-width: 500px; text-align: center; margin-bottom: 25px;">Instructions: Enter your pick-up station and drop-off station. 
+	<p style="max-width: 500px; text-align: center; margin-bottom: 25px;">Instructions: Enter your pick-up station, drop-off station, and distance (KM). 
 	Click <b>Regular Fare</b> for the standard ticket price or 
 	<b>Discounted Fare</b> for student, senior, or PWD fares.
 	</p>
@@ -86,7 +86,7 @@
         <input type="text" id="DROPOFF" class="form-control mx-auto" placeholder="Taft..." style="max-width: 300px; margin-bottom: 20px;">
 
 		<p>DISTANCE (KM)</p>
-		<input type="number" id="DISTANCE" class="form-control mx-auto" placeholder="Enter distance..." step="0.1" style="max-width: 300px; margin-bottom: 20px;">
+		<input type="number" id="DISTANCE" class="form-control mx-auto" placeholder="Enter distance..." step="0.1" min=0 style="max-width: 300px; margin-bottom: 20px;">
 
         <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 200px;">
             <button class="btn btn-primary w-100" onclick="buttonFare()">Regular Fare</button>
@@ -116,6 +116,7 @@
 	
 </body>
 </html>
+
 
 
 
