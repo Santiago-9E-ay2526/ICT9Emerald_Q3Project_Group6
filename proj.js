@@ -1,3 +1,4 @@
+
 const basefare = 50;
 const perKMrate = 15;
 const baseKM = 2;
@@ -72,7 +73,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-
 
 
