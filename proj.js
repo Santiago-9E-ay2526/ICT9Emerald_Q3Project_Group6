@@ -1,6 +1,6 @@
-const basefare = 50; // minimum fare, includes first 2KM
-const perKMrate = 15; // cost per kilometer beyond 2KM
-const baseKM = 2; // distance included in base fare
+const basefare = 50;
+const perKMrate = 15;
+const baseKM = 2;
 
 function buttonFare() {
     let pickup = document.getElementById("PICKUP").value;
@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
 
 
