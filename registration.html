@@ -58,18 +58,18 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
+<!-- NAVBAR START -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="nav-bar">
     <div class="container-fluid">
-
+		
         <!--LEFT SIDE-->
         <a class="navbar-brand" href="#">
-            <img src="logomrt.jpg" width="40" height="40" href="index.html#home"> eSakayMo Fare Guide
+            <img src="logomrt.jpg" width="40" height="40"> eSakayMo Fare Guide
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#home">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html#fareMatrix">Fare Matrix</a>
@@ -82,7 +82,7 @@
                 </li>
             </ul>
         </div>
-
+		
         <!--RIGHT SIDE-->
         <div class="ms-auto">
             <button type="button" class="btn btn-link">Book Now</button>
@@ -90,20 +90,19 @@
         </div>
     </div> 
 </nav>
-    <!-- END OF NAV -->
+<!-- NAVBAR END -->
 
 <!-- REGISTRATION FORM-->
 <main class="container text-light" id="registrationContainer">
-
-<div class="profile-section">
-    <img src="transparent.png" id="ProfileImg" class="ProfileImg">
-    <p id="pfpImg">Profile Image</p>
-    <div class="ChoosingProfile mt-2">
-        <label class="btn btn-secondary">
-            <input type="file" name="options" id="ChooseFile" autocomplete="off">
-        </label>
-    </div>
-</div>
+	<div class="profile-section">
+	    <img src="transparent.png" id="ProfileImg" class="ProfileImg">
+	    <p id="pfpImg">Profile Image</p>
+	    <div class="ChoosingProfile mt-2">
+	        <label class="btn btn-secondary">
+	            <input type="file" name="options" id="ChooseFile" autocomplete="off">
+	        </label>
+	    </div>
+	</div>
 
     <!-- Registration Form -->
     <form class="mx-auto" style="max-width: 400px;">
@@ -114,23 +113,25 @@
                 <label>First Name</label>
                 <input type="text" class="form-control" id="inputFirstName" placeholder="Enter">
             </div>
+			
             <div class="col">
                 <label>Last Name</label>
                 <input type="text" class="form-control" id="inputLastName" placeholder="Enter">
             </div>
         </div>
-
+		
         <div class="row mb-3">
             <div class="col">
                 <label>Age</label>
                 <input type="number" class="form-control" id="inputAge" placeholder="0">
             </div>
+			
             <div class="col">
                 <label>Contact Number</label>
                 <input type="number" class="form-control" id="inputContact" placeholder="000-000-0000">
             </div>
         </div>
-
+		
         <label>Email</label>
         <input type="email" class="form-control mb-3" id="inputEmail" placeholder="enter@email.com">
 
@@ -150,23 +151,25 @@
             </label>
         </div>
 
-        <a href="confirmation.html" class="btn btn-primary d-block mx-auto" style="width:200px;">Sign-Up</a>
+        <a href="confirmation.html" class="btn btn-primary d-block mx-auto" style="width: 200px;">Sign-Up</a>
     </form>
 </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-dark text-light mt-5" id="footer">
-        <div class="container py-4 text-center">
-            <p class="mb-1">Hans Baquiran, Isabelle Cabatu, Dwayne Chua, Mikela Santiago, Lizzie Vistro | 9 Emerald &copy;2026</p>
-            <p class="mb-1">Source: <a href="https://www.metrolinemap.com/metro/manila/" target="_blank">Manila Metro Rail Transit</a></p>
-        </div>
-    </footer>
+<!-- FOOTER START -->
+<footer class="bg-dark text-light mt-5" id="footer">
+	<div class="container py-4 text-center">
+		<p class="mb-1">Hans Baquiran, Isabelle Cabatu, Dwayne Chua, Mikela Santiago, Lizzie Vistro | 9 Emerald &copy;2026</p>
+		<p class="mb-1">Source: <a href="https://www.metrolinemap.com/metro/manila/" target="_blank">Manila Metro Rail Transit</a></p>
+	</div>
+</footer>
+<!-- FOOTER END -->
 
+<!-- JAVASCRIPT -->
     <script src="proj.js"></script>
 
 </body>
-
 </html>
+
 
 
 
