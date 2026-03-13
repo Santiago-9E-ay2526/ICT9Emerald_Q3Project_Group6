@@ -44,14 +44,6 @@ function buttonDiscount() {
         </div>`;
 }
 
-  // Fare update as user types
-  const distanceInput = document.getElementById("DISTANCE");
-  distanceInput.addEventListener("input", () => {
-      buttonFare();
-      buttonDiscount();
-  });
-});
-
 // Password confirmation
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
@@ -80,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
 
 
