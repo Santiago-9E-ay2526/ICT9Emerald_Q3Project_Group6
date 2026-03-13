@@ -17,7 +17,7 @@ function buttonFare() {
 
     document.getElementById("RegularFare").innerHTML = `
         <div class="alert alert-primary mt-2">
-            Regular Fare from ${pickup} to ${dropoff}: 
+            Regular Fare from ${pickup} to${dropoff}: 
             <strong>PHP ${fare.toFixed(2)}</strong>
         </div>`;
 }
@@ -39,7 +39,7 @@ function buttonDiscount() {
 
     document.getElementById("DiscountFare").innerHTML = `
         <div class="alert alert-success mt-2">
-            Discounted Fare (25% off) for ${pickup} to ${dropoff}: 
+            Discounted Fare (25% off) for ${pickup} to${dropoff}: 
             <strong>PHP ${discountedFare.toFixed(2)}</strong>
         </div>`;
 }
@@ -72,4 +72,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
