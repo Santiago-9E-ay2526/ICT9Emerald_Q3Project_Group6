@@ -59,8 +59,12 @@
         <h1 class="mt-3">
             Welcome to <span style="color:#4DA6FF;">eSakayMo</span> Fare Guide!
         </h1>
-        <p>This page helps commuters estimate their transportation fare quickly and easily.</p>
-        <p><span class="text-primary"> Scroll down below to access the fair matrix </span></p>
+        <p>eSakayMo Fare Guide is a simple website that helps commuters quickly estimate their MRT-3 transportation fare between stations. 
+            Just select your starting station and destination to see the fare instantly.</p>
+<button class="btn btn-primary mt-3" onclick="document.getElementById('fareMatrix').scrollIntoView({behavior: 'smooth'});">
+    View Instructions
+</button>
+        
     </div>
 </section>
     <!-- END HOME PAGE -->
@@ -71,6 +75,11 @@
     <img src="mrtmap.jpg" width="200" style="border-radius:10px; margin-bottom:20px;">
 
         <h1>MRT-3 Fare Matrix</h1>
+
+            <p style="max-width:500px; text-align:center; margin-bottom:25px;">Instructions: Enter your pick-up station and drop-off station. 
+            Click <b>Regular Fare</b> for the standard ticket price or 
+            <b>Discounted Fare</b> for student, senior, or PWD fares.
+            </p>
 
         <p>PICK-UP LOCATION</p>
         <input type="text" id="PICKUP" class="form-control mx-auto" placeholder="North Ave..." style="max-width:300px; margin-bottom:15px;">
@@ -103,6 +112,7 @@
     </script>
 </body>
 </html>
+
 
 
 
