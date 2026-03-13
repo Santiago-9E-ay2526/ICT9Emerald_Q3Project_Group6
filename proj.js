@@ -11,11 +11,10 @@ function buttonFare() {
         alert("Please enter a valid distance in KM!");
         return;
     }
-
-    // Compute fare: base fare + extra distance cost
-    let extraKM = Math.max(0, distance - baseKM); // distance beyond 2KM
+    
+    let extraKM = Math.max(0, distance - baseKM);
     let fare = basefare + extraKM * perKMrate;
-
+    
     document.getElementById("RegularFare").innerHTML = `
         <div class="alert alert-primary mt-2">
             Regular Fare from ${pickup} to ${dropoff}: 
@@ -33,13 +32,10 @@ function buttonDiscount() {
         return;
     }
 
-    // Compute regular fare first
     let extraKM = Math.max(0, distance - baseKM);
     let regularFare = basefare + extraKM * perKMrate;
-
-    // Apply 25% discount
     let discountedFare = regularFare * 0.75;
-
+    
     document.getElementById("DiscountFare").innerHTML = `
         <div class="alert alert-success mt-2">
             Discounted Fare (25% off) for ${pickup} to ${dropoff}: 
@@ -75,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
 
 
